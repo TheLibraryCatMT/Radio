@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 public class RadioTest {
     @Test
-    public void ifStationNumberBetweenZeroAndNine () {
+    public void ifStationNumberBetweenZeroAndNine() {
         Radio radio = new Radio();
         radio.setCurrentStationNumber(4);
 
@@ -16,7 +16,7 @@ public class RadioTest {
     }
 
     @Test
-    public void ifStationNumberNine () {
+    public void ifStationNumberNine() {
         Radio radio = new Radio();
         radio.setCurrentStationNumber(9);
 
@@ -27,7 +27,7 @@ public class RadioTest {
     }
 
     @Test
-    public void ifStationNumberMoreThenNine () {
+    public void ifStationNumberMoreThenNine() {
         Radio radio = new Radio();
         radio.setCurrentStationNumber(10);
 
@@ -38,7 +38,7 @@ public class RadioTest {
     }
 
     @Test
-    public void ifStationNumberEight () {
+    public void ifStationNumberEight() {
         Radio radio = new Radio();
         radio.setCurrentStationNumber(8);
 
@@ -48,7 +48,7 @@ public class RadioTest {
     }
 
     @Test
-    public void ifStationNumberLessThan0 () {
+    public void ifStationNumberLessThan0() {
         Radio radio = new Radio();
         radio.setCurrentStationNumber(-1);
 
@@ -59,7 +59,7 @@ public class RadioTest {
     }
 
     @Test
-    public void ifStationNumberTwo () {
+    public void ifStationNumberTwo() {
         Radio radio = new Radio();
         radio.setCurrentStationNumber(2);
 
@@ -70,7 +70,7 @@ public class RadioTest {
     }
 
     @Test
-    public void ifStationNumberZewo () {
+    public void ifStationNumberZewo() {
         Radio radio = new Radio();
         radio.setCurrentStationNumber(5);
         radio.setCurrentStationNumber(0);
@@ -82,7 +82,7 @@ public class RadioTest {
     }
 
     @Test
-    public void ifcurrentSoundVolumeBetweenZeroAndHundrend () {
+    public void ifcurrentSoundVolumeBetweenZeroAndHundrend() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(50);
 
@@ -91,8 +91,9 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
 
     }
+
     @Test
-    public void ifCurrentSoundVolumeZero () {
+    public void ifCurrentSoundVolumeZero() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(5);
         radio.setCurrentSoundVolume(0);
@@ -102,8 +103,9 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
 
     }
+
     @Test
-    public void ifcurrentSoundVolumeLessZero () {
+    public void ifcurrentSoundVolumeLessZero() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(-1);
 
@@ -114,7 +116,7 @@ public class RadioTest {
     }
 
     @Test
-    public void ifcurrentSoundVolumeOne () {
+    public void ifcurrentSoundVolumeOne() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(1);
 
@@ -125,7 +127,7 @@ public class RadioTest {
     }
 
     @Test
-    public void ifcurrentSoundVolume100 () {
+    public void ifcurrentSoundVolume100() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(100);
 
@@ -136,7 +138,7 @@ public class RadioTest {
     }
 
     @Test
-    public void ifcurrentSoundVolume101 () {
+    public void ifcurrentSoundVolume101() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(101);
 
@@ -147,7 +149,7 @@ public class RadioTest {
     }
 
     @Test
-    public void ifcurrentSoundVolume99 () {
+    public void ifcurrentSoundVolume99() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(99);
 
@@ -158,7 +160,7 @@ public class RadioTest {
     }
 
     @Test
-    public void nextStationNumberBetween0And9 () {
+    public void nextStationNumberBetween0And9() {
         Radio radio = new Radio();
         radio.setCurrentStationNumber(7);
         radio.nextStation();
@@ -170,7 +172,7 @@ public class RadioTest {
     }
 
     @Test
-    public void nextStationNumber0 () {
+    public void nextStationNumber0() {
         Radio radio = new Radio();
         radio.setCurrentStationNumber(0);
         radio.nextStation();
@@ -182,7 +184,7 @@ public class RadioTest {
     }
 
     @Test
-    public void nextStationNumber1 () {
+    public void nextStationNumber1() {
         Radio radio = new Radio();
         radio.setCurrentStationNumber(1);
         radio.nextStation();
@@ -194,7 +196,7 @@ public class RadioTest {
     }
 
     @Test
-    public void nextStationNumber9 () {
+    public void nextStationNumber9() {
         Radio radio = new Radio();
         radio.setCurrentStationNumber(9);
         radio.nextStation();
@@ -206,7 +208,7 @@ public class RadioTest {
     }
 
     @Test
-    public void nextStationNumber8 () {
+    public void nextStationNumber8() {
         Radio radio = new Radio();
         radio.setCurrentStationNumber(8);
         radio.nextStation();
@@ -218,7 +220,7 @@ public class RadioTest {
     }
 
     @Test
-    public void prevStationNumberBetween0and9 () {
+    public void prevStationNumberBetween0and9() {
         Radio radio = new Radio();
         radio.setCurrentStationNumber(8);
         radio.prevStation();
@@ -230,7 +232,7 @@ public class RadioTest {
     }
 
     @Test
-    public void prevStationNumberIf9 () {
+    public void prevStationNumberIf9() {
         Radio radio = new Radio();
         radio.setCurrentStationNumber(9);
         radio.prevStation();
@@ -242,7 +244,7 @@ public class RadioTest {
     }
 
     @Test
-    public void prevStationNumberIf0 () {
+    public void prevStationNumberIf0() {
         Radio radio = new Radio();
         radio.setCurrentStationNumber(0);
         radio.prevStation();
@@ -254,7 +256,7 @@ public class RadioTest {
     }
 
     @Test
-    public void nextVolumeBetween0and100 () {
+    public void nextVolumeBetween0and100() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(5);
         radio.nextVolume();
@@ -266,7 +268,7 @@ public class RadioTest {
     }
 
     @Test
-    public void nextVolumeBetween0 () {
+    public void nextVolumeBetween0() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(0);
         radio.nextVolume();
@@ -278,7 +280,7 @@ public class RadioTest {
     }
 
     @Test
-    public void nextVolum99 () {
+    public void nextVolum99() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(99);
         radio.nextVolume();
@@ -290,7 +292,7 @@ public class RadioTest {
     }
 
     @Test
-    public void nextVolum100 () {
+    public void nextVolum100() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(100);
         radio.nextVolume();
@@ -302,7 +304,7 @@ public class RadioTest {
     }
 
     @Test
-    public void prevVolumeBetween0And100 () {
+    public void prevVolumeBetween0And100() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(6);
         radio.prevVolume();
@@ -314,7 +316,7 @@ public class RadioTest {
     }
 
     @Test
-    public void prevVolume0 () {
+    public void prevVolume0() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(0);
         radio.prevVolume();
@@ -326,7 +328,7 @@ public class RadioTest {
     }
 
     @Test
-    public void prevVolume1 () {
+    public void prevVolume1() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(1);
         radio.prevVolume();
@@ -338,7 +340,7 @@ public class RadioTest {
     }
 
     @Test
-    public void prevVolume100 () {
+    public void prevVolume100() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(100);
         radio.prevVolume();
@@ -350,7 +352,7 @@ public class RadioTest {
     }
 
     @Test
-    public void prevVolume99 () {
+    public void prevVolume99() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(99);
         radio.prevVolume();

@@ -32,7 +32,7 @@ public class Radio {
 
     }
 
-    public void nextStation () {
+    public void nextStation() {
         if (currentStationNumber != 9) {
             currentStationNumber++;
         } else {
@@ -40,24 +40,26 @@ public class Radio {
         }
     }
 
-    public void prevStation () {
+    public void prevStation() {
         if (currentStationNumber != 0) {
             currentStationNumber--;
         } else {
             currentStationNumber = 9;
         }
     }
-    public void nextVolume () {
+
+    public void nextVolume() {
         if (currentSoundVolume < 100) {
             currentSoundVolume = currentSoundVolume + 1;
         }
-        }
-    public void prevVolume () {
+    }
+
+    public void prevVolume() {
         if (currentSoundVolume > 0) {
             currentSoundVolume = currentSoundVolume - 1;
         }
-        }
     }
+}
 
 
 
